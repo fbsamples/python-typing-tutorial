@@ -1,0 +1,8 @@
+{
+  "binary": "/Users/szhu/.venvs/venv/bin/pyre.bin",
+  "source_directories": [
+    "."
+  ],
+  "taint_models_path": "/Users/szhu/.venvs/venv/lib",
+  "typeshed": "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed"
+}
