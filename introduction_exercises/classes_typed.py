@@ -1,14 +1,20 @@
+from __future__ import annotations
+
 class Talk:
+    """
+    >>> str(Talk("Python Typing Tutorial", 10))
+    '10:00 - Python Typing Tutorial'
+    """
     def __init__(self, title: str, hour: int) -> None:
         self.title = title
         self.hour = hour
 
     def __str__(self) -> str:
-        return str(self.hour) + ":00 - " + self.title
+        return f"{str(self.hour)}:00 - {self.title}"
 
 class PyCon:
     """
-    >>> PyCon = PyCon("Salt Late City, Utah", 2022)
+    >>> pycon = PyCon("Salt Late City, Utah", 2022)
     >>> pycon.add_talks([Talk("Securing Python Applications with Pysa", 11), Talk("Python Typing Tutorial", 10)])
     >>> print(pycon.calendar())
     2022 PyCon at Salt Late City, Utah
@@ -27,9 +33,8 @@ class PyCon:
         def get_hour(talk: Talk) -> int:
             return talk.hour
         sorted_talks = sorted(self.talks, key=get_hour)
-        title = str(self) + "\n"
-
-        return title + "\n".join(map(str, sorted_talks))
+        new_line = "\n"
+        return f"{self}{new_line}{new_line.join([str(talk) for talk in sorted_talks])}"
 
     def __str__(self) -> str:
-        return str(self.year) + " PyCon at " + self.location
+        return f"{self.year} PyCon at {self.location}"

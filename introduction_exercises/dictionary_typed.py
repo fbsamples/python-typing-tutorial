@@ -1,5 +1,15 @@
 # Working with int -> string dictionaries
+def to_list(dict: dict[int, str]) -> list[str | None]:
+    return [dict.get(i) for i in range(max(dict.keys()))]
 
+def to_dict(list: list[str | None]) -> dict[int, str]:
+    result = {}
+    for i in range(len(list)):
+        if list[i] is not None:
+            result[i] = list[i]
+    return result
+
+# These are just wrappers over common dictionary functions
 def set(dict: dict[int, str], key: int, value: str) -> None:
     dict[key] = value
 
@@ -20,17 +30,3 @@ def values(dict: dict[int, str]) -> list[str]:
 
 def items(dict: dict[int, str]) -> list[tuple[int, str]]:
     return list(zip(keys(dict), values(dict)))
-
-def to_list(dict: dict[int, str]) -> list[str | None]:
-    max_key = max(keys(dict))
-    result = [None] * max_key
-    for key, value in items(dict):
-        result[key] = value
-    return result
-
-def to_dict(list: list[str | None]) -> dict[int, str]:
-    result = {}
-    for i in range(len(list)):
-        if list[i] is not None:
-            result[i] = list[i]
-    return result

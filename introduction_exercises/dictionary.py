@@ -1,6 +1,18 @@
 # Working with int -> string dictionaries
 
-def set(dict, key, value) -> None:
+def to_list(dict):
+    return [dict.get(i) for i in range(max(dict.keys()))]
+
+def to_dict(list):
+    result = {}
+    for i in range(len(list)):
+        if list[i] is not None:
+            result[i] = list[i]
+    return result
+
+# These are just wrappers over common dictionary functions
+
+def set(dict, key, value):
     dict[key] = value
 
 def get(dict, key):
@@ -20,17 +32,3 @@ def values(dict):
 
 def items(dict):
     return list(zip(keys(dict), values(dict)))
-
-def to_list(dict):
-    max_key = max(keys(dict))
-    result = [None] * max_key
-    for key, value in items(dict):
-        result[key] = value
-    return result
-
-def to_dict(list):
-    result = {}
-    for i in range(len(list)):
-        if list[i] is not None:
-            result[i] = list[i]
-    return result
