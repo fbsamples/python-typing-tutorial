@@ -7,7 +7,6 @@ def greet(subject, repeat):
 def main():
     repeat_count = input("How many repeats: ")
     greet("World", repeat_count)
-    greet()
 
 if __name__ == "__main__":
     main()
