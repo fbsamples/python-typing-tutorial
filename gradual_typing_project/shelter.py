@@ -2,18 +2,18 @@
 
 import random
 
-from creatures import Cat, Dog, Person
+from creature import Cat, Dog, Person
 from interact import adopt, play 
 
 class Shelter:
     def __init__(self):
         self.cats = []
-	self.dogs = []
-	self.people = []
+        self.dogs = []
+        self.people = []
 
     def populate(input):
-	for name in input['cats']:
-	    self.cats.append(Cat(name))
+        for name in input['cats']:
+            self.cats.append(Cat(name))
         for name in input['dogs']:
             self.dogs.append(Dog(name))
         for name in input['people']:

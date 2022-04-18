@@ -22,7 +22,7 @@ def main():
     # Simulate 8 hours of activity at the shelter
     for _ in range(8):
         stats = print_stats(shelter)
-	print_stats(stats)
+        print_stats(stats)
         shelter.run()
 
 

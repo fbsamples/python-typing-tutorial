@@ -16,7 +16,7 @@ class Person(Creature):
         super().__init__(name)
 
     def adopt(self, pet):
-	self.pets.append(pet)
+        self.pets.append(pet)
 
 
 class Cat(Creature):
@@ -26,10 +26,10 @@ class Cat(Creature):
         super().__init__(name)
 
     def make_friend(self, friend):
-	self.friends.append(friend)
+        self.friends.append(friend)
 
     def make_enemy(self, enemy):
-	self.enemies.append(enemy)
+        self.enemies.append(enemy)
 
     def meet(self, other):
         if random.random() < 0.5:
@@ -44,7 +44,7 @@ class Dog(Creature):
         super().__init__(name)
 
     def make_friend(self, friend):
-	self.friends.append(friend)
+        self.friends.append(friend)
 
     def meet(self, other):
         self.make_friend(other)
