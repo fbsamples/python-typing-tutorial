@@ -23,7 +23,8 @@ class Shelter:
         # Some random animal interactions
         all_animals = self.cats + self.dogs
         for _ in range(random.randint(0, 5)):
-            play(random.choice(all_animals), random.choice(all_animals))
+            playmates = random.sample(all_animals, 2)
+            play(playmates[0], playmates[1])
 
         # Some attempted adoptions
         for person in self.people:
