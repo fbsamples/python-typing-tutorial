@@ -11,7 +11,7 @@ class Shelter:
         self.dogs = []
         self.people = []
 
-    def populate(input):
+    def populate(self, input):
         for name in input['cats']:
             self.cats.append(Cat(name))
         for name in input['dogs']:
@@ -19,7 +19,7 @@ class Shelter:
         for name in input['people']:
             self.people.append(People(name))
 
-    def run():
+    def run(self):
         # Some random animal interactions
         all_animals = self.cats + self.dogs
         for _ in random.randint(0, 5):
