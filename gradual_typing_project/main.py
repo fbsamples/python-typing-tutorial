@@ -21,11 +21,9 @@ def main():
         data = json.load(json_file)
         shelter.populate(data)
 
-    # Simulate 8 hours of activity at the shelter
-    for _ in range(8):
-        stats = print_stats(shelter)
-        print(stats)
-        shelter.run()
+    stats = print_stats(shelter)
+    print("Initial: " + stats)
+    shelter.run()
 
 
 if __name__ == "__main__":
