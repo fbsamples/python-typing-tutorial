@@ -1,0 +1,188 @@
+2022-04-21 16:41:57 INFO Initializing file watching service...
+2022-04-21 16:41:57 INFO Connecting to watchman...
+2022-04-21 16:41:57 INFO Established watchman connection.
+2022-04-21 16:41:57 INFO Server has started listening on socket `/var/folders/cx/7zqdt3vd7d7_xwg8qt7bjwtw0000gn/T/pyre_server_14743c24533012ae0c336af9a962d452.sock`
+2022-04-21 16:41:57 INFO Initializing shared memory [heap_size=8589934592, dep_table_pow=27, hash_table_pow=26]
+2022-04-21 16:41:57 INFO Initializing server state from scratch...
+2022-04-21 16:41:57 INFO Building module tracker...
+2022-04-21 16:41:58 PERFORMANCE Module tracker built: 0.45s
+2022-04-21 16:41:58 INFO Building type environment...
+2022-04-21 16:41:58 INFO Parsing 3565 stubs and sources...
+2022-04-21 16:42:00 PERFORMANCE Sources parsed: 2.19s
+2022-04-21 16:42:02 PERFORMANCE Full environment built: 3.79s
+2022-04-21 16:42:02 INFO Checking 5 functions...
+2022-04-21 16:42:02 PROGRESS Processed 5 of 5 functions
+2022-04-21 16:42:02 PERFORMANCE Check_TypeCheck: 0.03s
+2022-04-21 16:42:02 MEMORY Shared memory size post-typecheck (size: 51)
+2022-04-21 16:42:02 PROGRESS Postprocessing 3565 sources...
+2022-04-21 16:42:02 PROGRESS Postprocessed 149 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 298 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 447 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 596 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 745 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 894 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1043 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1192 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1341 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1490 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1639 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1788 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 1937 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2086 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2235 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2384 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2533 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2682 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2831 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 2969 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 3118 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 3267 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 3416 of 3565 sources
+2022-04-21 16:42:02 PROGRESS Postprocessed 3565 of 3565 sources
+2022-04-21 16:42:02 PERFORMANCE Initialization: 4.80s
+2022-04-21 16:42:02 INFO Server state initialized.
+2022-04-21 16:42:02 SERVER Connection established
+2022-04-21 16:42:02 SERVER Processing request (DisplayTypeError())...
+2022-04-21 16:42:02 PERFORMANCE Server request: 0.00s
+2022-04-21 16:42:02 SERVER Request `(DisplayTypeError())` processed
+2022-04-21 16:42:02 SERVER Connection closed
+2022-04-21 16:45:37 SERVER Connection established
+2022-04-21 16:45:37 SERVER Processing request (DisplayTypeError())...
+2022-04-21 16:45:37 PERFORMANCE Server request: 0.00s
+2022-04-21 16:45:37 SERVER Request `(DisplayTypeError())` processed
+2022-04-21 16:45:37 SERVER Connection closed
+2022-04-21 16:49:09 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:49:09 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:49:09 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:49:09 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:49:09 INFO Repopulating the environment...
+2022-04-21 16:49:09 INFO Checking 4 functions...
+2022-04-21 16:49:09 PROGRESS Processed 4 of 4 functions
+2022-04-21 16:49:09 PERFORMANCE Check_TypeCheck: 0.01s
+2022-04-21 16:49:09 PROGRESS Postprocessing 2 sources...
+2022-04-21 16:49:09 PROGRESS Postprocessed 2 of 2 sources
+2022-04-21 16:49:09 MEMORY Shared memory size (size: 51)
+2022-04-21 16:49:09 INFO Number of new errors = 1
+2022-04-21 16:49:09 PERFORMANCE Incremental check: 0.13s
+2022-04-21 16:49:09 PERFORMANCE Server request: 0.24s
+2022-04-21 16:49:09 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:49:10 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:49:10 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:49:10 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:49:10 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:49:11 INFO Repopulating the environment...
+2022-04-21 16:49:11 INFO Checking 0 functions...
+2022-04-21 16:49:11 PROGRESS Processed 0 of 0 functions
+2022-04-21 16:49:11 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:49:11 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:49:11 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:49:11 MEMORY Shared memory size (size: 51)
+2022-04-21 16:49:11 INFO Number of new errors = 1
+2022-04-21 16:49:11 PERFORMANCE Incremental check: 0.12s
+2022-04-21 16:49:11 PERFORMANCE Server request: 0.22s
+2022-04-21 16:49:11 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:49:12 SERVER Connection established
+2022-04-21 16:49:12 SERVER Processing request (DisplayTypeError())...
+2022-04-21 16:49:12 PERFORMANCE Server request: 0.00s
+2022-04-21 16:49:12 SERVER Request `(DisplayTypeError())` processed
+2022-04-21 16:49:12 SERVER Connection closed
+2022-04-21 16:50:44 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:50:44 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:50:44 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:50:44 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:50:44 INFO Repopulating the environment...
+2022-04-21 16:50:44 INFO Checking 2 functions...
+2022-04-21 16:50:44 PROGRESS Processed 2 of 2 functions
+2022-04-21 16:50:44 PERFORMANCE Check_TypeCheck: 0.02s
+2022-04-21 16:50:44 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:50:44 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:50:44 MEMORY Shared memory size (size: 51)
+2022-04-21 16:50:44 INFO Number of new errors = 0
+2022-04-21 16:50:44 PERFORMANCE Incremental check: 0.13s
+2022-04-21 16:50:44 PERFORMANCE Server request: 0.25s
+2022-04-21 16:50:44 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:50:44 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:50:44 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:50:44 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:50:44 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:50:44 INFO Repopulating the environment...
+2022-04-21 16:50:44 INFO Checking 0 functions...
+2022-04-21 16:50:44 PROGRESS Processed 0 of 0 functions
+2022-04-21 16:50:44 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:50:44 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:50:44 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:50:44 MEMORY Shared memory size (size: 51)
+2022-04-21 16:50:44 INFO Number of new errors = 0
+2022-04-21 16:50:44 PERFORMANCE Incremental check: 0.13s
+2022-04-21 16:50:44 PERFORMANCE Server request: 0.23s
+2022-04-21 16:50:44 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:50:45 SERVER Connection established
+2022-04-21 16:50:45 SERVER Processing request (DisplayTypeError())...
+2022-04-21 16:50:45 PERFORMANCE Server request: 0.00s
+2022-04-21 16:50:45 SERVER Request `(DisplayTypeError())` processed
+2022-04-21 16:50:45 SERVER Connection closed
+2022-04-21 16:52:10 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:52:10 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:52:10 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:52:10 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:52:10 INFO Repopulating the environment...
+2022-04-21 16:52:10 INFO Checking 4 functions...
+2022-04-21 16:52:10 PROGRESS Processed 4 of 4 functions
+2022-04-21 16:52:10 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:52:10 PROGRESS Postprocessing 2 sources...
+2022-04-21 16:52:10 PROGRESS Postprocessed 2 of 2 sources
+2022-04-21 16:52:10 MEMORY Shared memory size (size: 51)
+2022-04-21 16:52:10 INFO Number of new errors = 1
+2022-04-21 16:52:10 PERFORMANCE Incremental check: 0.14s
+2022-04-21 16:52:10 PERFORMANCE Server request: 0.23s
+2022-04-21 16:52:10 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:52:11 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))...
+2022-04-21 16:52:11 SERVER Explicit Module Update: (explicit_updates((Changed((relative greet.py)(qualifier(greet))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:52:11 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:52:11 PERFORMANCE Module tracker updated: 0.02s
+2022-04-21 16:52:11 INFO Repopulating the environment...
+2022-04-21 16:52:11 INFO Checking 0 functions...
+2022-04-21 16:52:11 PROGRESS Processed 0 of 0 functions
+2022-04-21 16:52:11 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:52:11 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:52:11 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:52:11 MEMORY Shared memory size (size: 51)
+2022-04-21 16:52:11 INFO Number of new errors = 0
+2022-04-21 16:52:11 PERFORMANCE Incremental check: 0.15s
+2022-04-21 16:52:11 PERFORMANCE Server request: 0.25s
+2022-04-21 16:52:11 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/greet.py))` processed
+2022-04-21 16:52:13 SERVER Connection established
+2022-04-21 16:52:13 SERVER Processing request (DisplayTypeError())...
+2022-04-21 16:52:13 PERFORMANCE Server request: 0.00s
+2022-04-21 16:52:13 SERVER Request `(DisplayTypeError())` processed
+2022-04-21 16:52:13 SERVER Connection closed
+2022-04-21 16:52:33 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/planets.py))...
+2022-04-21 16:52:33 SERVER Explicit Module Update: (explicit_updates((Changed((relative planets.py)(qualifier(planets))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:52:33 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:52:33 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:52:33 INFO Repopulating the environment...
+2022-04-21 16:52:33 INFO Checking 0 functions...
+2022-04-21 16:52:33 PROGRESS Processed 0 of 0 functions
+2022-04-21 16:52:33 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:52:33 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:52:33 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:52:33 MEMORY Shared memory size (size: 51)
+2022-04-21 16:52:33 INFO Number of new errors = 1
+2022-04-21 16:52:33 PERFORMANCE Incremental check: 0.12s
+2022-04-21 16:52:33 PERFORMANCE Server request: 0.20s
+2022-04-21 16:52:33 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/planets.py))` processed
+2022-04-21 16:52:35 SERVER Processing request (IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/planets.py))...
+2022-04-21 16:52:35 SERVER Explicit Module Update: (explicit_updates((Changed((relative planets.py)(qualifier(planets))(priority 125)(is_stub false)(is_external false)(is_init false)))))
+2022-04-21 16:52:35 SERVER Implicit Module Update: (implicit_updates())
+2022-04-21 16:52:35 PERFORMANCE Module tracker updated: 0.00s
+2022-04-21 16:52:35 INFO Repopulating the environment...
+2022-04-21 16:52:35 INFO Checking 0 functions...
+2022-04-21 16:52:35 PROGRESS Processed 0 of 0 functions
+2022-04-21 16:52:35 PERFORMANCE Check_TypeCheck: 0.00s
+2022-04-21 16:52:35 PROGRESS Postprocessing 1 sources...
+2022-04-21 16:52:35 PROGRESS Postprocessed 1 of 1 sources
+2022-04-21 16:52:35 MEMORY Shared memory size (size: 51)
+2022-04-21 16:52:35 INFO Number of new errors = 1
+2022-04-21 16:52:35 PERFORMANCE Incremental check: 0.13s
+2022-04-21 16:52:35 PERFORMANCE Server request: 0.21s
+2022-04-21 16:52:35 SERVER Request `(IncrementalUpdate(/Users/szhu/python-typing-tutorial-test/demo_project/planets.py))` processed

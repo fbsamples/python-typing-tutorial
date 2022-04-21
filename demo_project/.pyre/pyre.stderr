@@ -1,0 +1,441 @@
+2022-04-21 16:40:23,016 [PID 9909] INFO No binary specified, looking for `pyre.bin` in PATH
+2022-04-21 16:40:23,016 [PID 9909] INFO Could not determine the number of Pyre workers from configuration. Auto-set the value to 12.
+2022-04-21 16:40:23,016 [PID 9909] INFO No typeshed specified, looking for it...
+2022-04-21 16:40:23,017 [PID 9909] INFO Found: `/Users/szhu/.venvs/venv/lib/pyre_check/typeshed`
+2022-04-21 16:40:23,022 [PID 9909] INFO Writing arguments into /var/folders/cx/7zqdt3vd7d7_xwg8qt7bjwtw0000gn/T/pyre_arguments_s2el3wzz.json...
+2022-04-21 16:40:23,022 [PID 9909] DEBUG Arguments:
+{
+  "source_paths": {
+    "kind": "simple",
+    "paths": [
+      "/Users/szhu/python-typing-tutorial-test/demo_project"
+    ]
+  },
+  "search_paths": [
+    "/Users/szhu/.venvs/venv/lib/python3.7/site-packages",
+    "/Users/szhu/Library/Python/3.7/lib/python/site-packages",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stdlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/DateTimeRange",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Deprecated",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask-Cors",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask-SQLAlchemy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/JACK-Client",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Jinja2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Markdown",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/MarkupSafe",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Pillow",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/PyMySQL",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/PyYAML",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Pygments",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/SQLAlchemy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Send2Trash",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Werkzeug",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/aiofiles",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/annoy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/appdirs",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/atomicwrites",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/aws-xray-sdk",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/babel",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/backports.ssl_match_hostname",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/backports_abc",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/beautifulsoup4",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/bleach",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/boto",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/braintree",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/cachetools",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/caldav",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/certifi",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/characteristic",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/chardet",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/chevron",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/click",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/click-spinner",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/colorama",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/commonmark",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/contextvars",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/croniter",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/cryptography",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/dataclasses",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/dateparser",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/decorator",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/docopt",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/docutils",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/editdistance",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/emoji",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/entrypoints",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/filelock",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/first",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/flake8-plugin-utils",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/flake8-simplify",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/fpdf2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/freezegun",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/frozendict",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/google-cloud-ndb",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/hdbcli",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/html5lib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/httplib2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/humanfriendly",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/invoke",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/itsdangerous",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/jmespath",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/jsonschema",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ldap3",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mock",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mypy-extensions",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mysqlclient",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/oauthlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/openpyxl",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/opentracing",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/orjson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/paramiko",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/parsimonious",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/passlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/passpy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/polib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/prettytable",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/protobuf",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/psutil",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/psycopg2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyOpenSSL",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyRFC3339",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyaudio",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pycurl",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyfarmhash",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyflakes",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pynput",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pysftp",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pytest-lazy-fixture",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-dateutil",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-gflags",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-nmap",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-slugify",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pytz",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyvmomi",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/redis",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/regex",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/requests",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/retry",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/selenium",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/setuptools",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/simplejson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/singledispatch",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/six",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/slumber",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/stdlib-list",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/stripe",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/tabulate",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/termcolor",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/toml",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/toposort",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ttkthemes",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/typed-ast",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/tzlocal",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ujson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/urllib3",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/vobject",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/waitress",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/whatthepatch",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/xxhash"
+  ],
+  "excludes": [],
+  "checked_directory_allowlist": [
+    "/Users/szhu/python-typing-tutorial-test/demo_project"
+  ],
+  "checked_directory_blocklist": [],
+  "extensions": [],
+  "log_path": "/Users/szhu/python-typing-tutorial-test/demo_project/.pyre",
+  "global_root": "/Users/szhu/python-typing-tutorial-test/demo_project",
+  "debug": false,
+  "python_version": {
+    "major": 3,
+    "minor": 7,
+    "micro": 5
+  },
+  "shared_memory": {},
+  "parallel": true,
+  "number_of_workers": 12,
+  "additional_logging_sections": [],
+  "show_error_traces": false,
+  "strict": false
+}
+2022-04-21 16:40:23,208 [PID 9909] INFO  Initializing shared memory [heap_size=8589934592, dep_table_pow=27, hash_table_pow=26]
+2022-04-21 16:40:23,239 [PID 9909] INFO  Building module tracker...
+2022-04-21 16:40:23,866 [PID 9909] PERFORMANCE  Module tracker built: 0.63s
+2022-04-21 16:40:23,866 [PID 9909] INFO  Building type environment...
+2022-04-21 16:40:24,076 [PID 9909] INFO  Parsing 3565 stubs and sources...
+2022-04-21 16:40:27,435 [PID 9909] PERFORMANCE  Sources parsed: 3.36s
+2022-04-21 16:40:28,636 [PID 9909] PERFORMANCE  Full environment built: 4.77s
+2022-04-21 16:40:28,824 [PID 9909] INFO  Checking 5 functions...
+2022-04-21 16:40:28,836 [PID 9909] INFO  Processed 5 of 5 functions
+2022-04-21 16:40:28,836 [PID 9909] PERFORMANCE  Check_TypeCheck: 0.01s
+2022-04-21 16:40:28,836 [PID 9909] MEMORY  Shared memory size post-typecheck (size: 51)
+2022-04-21 16:40:28,836 [PID 9909] INFO  Postprocessing 3565 sources...
+2022-04-21 16:40:28,894 [PID 9909] INFO  Postprocessed 149 of 3565 sources
+2022-04-21 16:40:28,902 [PID 9909] INFO  Postprocessed 298 of 3565 sources
+2022-04-21 16:40:28,910 [PID 9909] INFO  Postprocessed 447 of 3565 sources
+2022-04-21 16:40:28,915 [PID 9909] INFO  Postprocessed 596 of 3565 sources
+2022-04-21 16:40:28,915 [PID 9909] INFO  Postprocessed 745 of 3565 sources
+2022-04-21 16:40:28,915 [PID 9909] INFO  Postprocessed 894 of 3565 sources
+2022-04-21 16:40:28,931 [PID 9909] INFO  Postprocessed 1043 of 3565 sources
+2022-04-21 16:40:28,931 [PID 9909] INFO  Postprocessed 1192 of 3565 sources
+2022-04-21 16:40:28,944 [PID 9909] INFO  Postprocessed 1341 of 3565 sources
+2022-04-21 16:40:28,952 [PID 9909] INFO  Postprocessed 1490 of 3565 sources
+2022-04-21 16:40:28,952 [PID 9909] INFO  Postprocessed 1639 of 3565 sources
+2022-04-21 16:40:28,962 [PID 9909] INFO  Postprocessed 1788 of 3565 sources
+2022-04-21 16:40:28,995 [PID 9909] INFO  Postprocessed 1937 of 3565 sources
+2022-04-21 16:40:29,008 [PID 9909] INFO  Postprocessed 2086 of 3565 sources
+2022-04-21 16:40:29,014 [PID 9909] INFO  Postprocessed 2235 of 3565 sources
+2022-04-21 16:40:29,017 [PID 9909] INFO  Postprocessed 2384 of 3565 sources
+2022-04-21 16:40:29,021 [PID 9909] INFO  Postprocessed 2533 of 3565 sources
+2022-04-21 16:40:29,027 [PID 9909] INFO  Postprocessed 2682 of 3565 sources
+2022-04-21 16:40:29,030 [PID 9909] INFO  Postprocessed 2831 of 3565 sources
+2022-04-21 16:40:29,034 [PID 9909] INFO  Postprocessed 2980 of 3565 sources
+2022-04-21 16:40:29,038 [PID 9909] INFO  Postprocessed 3118 of 3565 sources
+2022-04-21 16:40:29,044 [PID 9909] INFO  Postprocessed 3267 of 3565 sources
+2022-04-21 16:40:29,054 [PID 9909] INFO  Postprocessed 3416 of 3565 sources
+2022-04-21 16:40:29,057 [PID 9909] INFO  Postprocessed 3565 of 3565 sources
+2022-04-21 16:40:29,058 [PID 9909] PERFORMANCE  Check: 5.82s
+2022-04-21 16:40:29,114 [PID 9909] SUCCESS No type errors found
+2022-04-21 16:41:57,629 [PID 10423] INFO Waiting for server...
+2022-04-21 16:41:57,634 [PID 10423] INFO Cannot find a running Pyre server. Starting a new one...
+2022-04-21 16:41:57,634 [PID 10423] INFO No binary specified, looking for `pyre.bin` in PATH
+2022-04-21 16:41:57,634 [PID 10423] INFO Could not determine the number of Pyre workers from configuration. Auto-set the value to 12.
+2022-04-21 16:41:57,635 [PID 10423] INFO No typeshed specified, looking for it...
+2022-04-21 16:41:57,635 [PID 10423] INFO Found: `/Users/szhu/.venvs/venv/lib/pyre_check/typeshed`
+2022-04-21 16:41:57,638 [PID 10423] INFO Starting server at `demo_project`...
+2022-04-21 16:41:57,639 [PID 10423] INFO Writing arguments into /var/folders/cx/7zqdt3vd7d7_xwg8qt7bjwtw0000gn/T/pyre_arguments_1x6izkjw.json...
+2022-04-21 16:41:57,639 [PID 10423] DEBUG Arguments:
+{
+  "source_paths": {
+    "kind": "simple",
+    "paths": [
+      "/Users/szhu/python-typing-tutorial-test/demo_project"
+    ]
+  },
+  "search_paths": [
+    "/Users/szhu/.venvs/venv/lib/python3.7/site-packages",
+    "/Users/szhu/Library/Python/3.7/lib/python/site-packages",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stdlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/DateTimeRange",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Deprecated",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask-Cors",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Flask-SQLAlchemy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/JACK-Client",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Jinja2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Markdown",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/MarkupSafe",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Pillow",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/PyMySQL",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/PyYAML",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Pygments",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/SQLAlchemy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Send2Trash",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/Werkzeug",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/aiofiles",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/annoy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/appdirs",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/atomicwrites",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/aws-xray-sdk",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/babel",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/backports.ssl_match_hostname",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/backports_abc",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/beautifulsoup4",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/bleach",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/boto",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/braintree",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/cachetools",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/caldav",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/certifi",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/characteristic",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/chardet",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/chevron",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/click",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/click-spinner",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/colorama",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/commonmark",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/contextvars",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/croniter",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/cryptography",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/dataclasses",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/dateparser",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/decorator",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/docopt",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/docutils",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/editdistance",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/emoji",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/entrypoints",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/filelock",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/first",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/flake8-plugin-utils",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/flake8-simplify",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/fpdf2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/freezegun",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/frozendict",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/google-cloud-ndb",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/hdbcli",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/html5lib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/httplib2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/humanfriendly",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/invoke",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/itsdangerous",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/jmespath",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/jsonschema",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ldap3",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mock",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mypy-extensions",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/mysqlclient",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/oauthlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/openpyxl",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/opentracing",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/orjson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/paramiko",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/parsimonious",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/passlib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/passpy",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/polib",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/prettytable",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/protobuf",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/psutil",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/psycopg2",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyOpenSSL",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyRFC3339",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyaudio",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pycurl",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyfarmhash",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyflakes",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pynput",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pysftp",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pytest-lazy-fixture",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-dateutil",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-gflags",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-nmap",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/python-slugify",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pytz",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/pyvmomi",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/redis",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/regex",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/requests",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/retry",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/selenium",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/setuptools",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/simplejson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/singledispatch",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/six",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/slumber",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/stdlib-list",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/stripe",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/tabulate",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/termcolor",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/toml",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/toposort",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ttkthemes",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/typed-ast",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/tzlocal",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/ujson",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/urllib3",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/vobject",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/waitress",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/whatthepatch",
+    "/Users/szhu/.venvs/venv/lib/pyre_check/typeshed/stubs/xxhash"
+  ],
+  "excludes": [],
+  "checked_directory_allowlist": [
+    "/Users/szhu/python-typing-tutorial-test/demo_project"
+  ],
+  "checked_directory_blocklist": [],
+  "extensions": [],
+  "log_path": "/Users/szhu/python-typing-tutorial-test/demo_project/.pyre",
+  "global_root": "/Users/szhu/python-typing-tutorial-test/demo_project",
+  "debug": false,
+  "python_version": {
+    "major": 3,
+    "minor": 7,
+    "micro": 5
+  },
+  "shared_memory": {},
+  "parallel": true,
+  "number_of_workers": 12,
+  "strict": false,
+  "socket_path": "/var/folders/cx/7zqdt3vd7d7_xwg8qt7bjwtw0000gn/T/pyre_server_14743c24533012ae0c336af9a962d452.sock",
+  "show_error_traces": false,
+  "additional_logging_sections": [
+    "server"
+  ],
+  "watchman_root": "/Users/szhu/python-typing-tutorial-test/demo_project",
+  "taint_model_paths": [
+    "/Users/szhu/.venvs/venv/lib"
+  ],
+  "store_type_check_resolution": false,
+  "critical_files": [
+    {
+      "full_path": "/Users/szhu/python-typing-tutorial-test/demo_project/.pyre_configuration"
+    }
+  ]
+}
+2022-04-21 16:41:57,643 [PID 10423] INFO Server is starting in the background.
+
+2022-04-21 16:41:57,710 [PID 10423] INFO  Initializing file watching service...
+2022-04-21 16:41:57,742 [PID 10423] INFO  Connecting to watchman...
+2022-04-21 16:41:57,743 [PID 10423] INFO  Established watchman connection.
+2022-04-21 16:41:57,743 [PID 10423] INFO  Server has started listening on socket `/var/folders/cx/7zqdt3vd7d7_xwg8qt7bjwtw0000gn/T/pyre_server_14743c24533012ae0c336af9a962d452.sock`
+2022-04-21 16:41:57,752 [PID 10423] INFO  Initializing shared memory [heap_size=8589934592, dep_table_pow=27, hash_table_pow=26]
+2022-04-21 16:41:57,752 [PID 10423] INFO  Initializing server state from scratch...
+2022-04-21 16:41:57,788 [PID 10423] INFO  Building module tracker...
+2022-04-21 16:41:58,240 [PID 10423] PERFORMANCE  Module tracker built: 0.45s
+2022-04-21 16:41:58,240 [PID 10423] INFO  Building type environment...
+2022-04-21 16:41:58,240 [PID 10423] INFO  Parsing 3565 stubs and sources...
+2022-04-21 16:42:00,425 [PID 10423] PERFORMANCE  Sources parsed: 2.19s
+2022-04-21 16:42:02,022 [PID 10423] PERFORMANCE  Full environment built: 3.79s
+2022-04-21 16:42:02,199 [PID 10423] INFO  Checking 5 functions...
+2022-04-21 16:42:02,228 [PID 10423] INFO  Processed 5 of 5 functions
+2022-04-21 16:42:02,228 [PID 10423] PERFORMANCE  Check_TypeCheck: 0.03s
+2022-04-21 16:42:02,228 [PID 10423] MEMORY  Shared memory size post-typecheck (size: 51)
+2022-04-21 16:42:02,228 [PID 10423] INFO  Postprocessing 3565 sources...
+2022-04-21 16:42:02,313 [PID 10423] INFO  Postprocessed 149 of 3565 sources
+2022-04-21 16:42:02,332 [PID 10423] INFO  Postprocessed 298 of 3565 sources
+2022-04-21 16:42:02,333 [PID 10423] INFO  Postprocessed 447 of 3565 sources
+2022-04-21 16:42:02,347 [PID 10423] INFO  Postprocessed 596 of 3565 sources
+2022-04-21 16:42:02,348 [PID 10423] INFO  Postprocessed 745 of 3565 sources
+2022-04-21 16:42:02,348 [PID 10423] INFO  Postprocessed 894 of 3565 sources
+2022-04-21 16:42:02,373 [PID 10423] INFO  Postprocessed 1043 of 3565 sources
+2022-04-21 16:42:02,373 [PID 10423] INFO  Postprocessed 1192 of 3565 sources
+2022-04-21 16:42:02,373 [PID 10423] INFO  Postprocessed 1341 of 3565 sources
+2022-04-21 16:42:02,374 [PID 10423] INFO  Postprocessed 1490 of 3565 sources
+2022-04-21 16:42:02,397 [PID 10423] INFO  Postprocessed 1639 of 3565 sources
+2022-04-21 16:42:02,398 [PID 10423] INFO  Postprocessed 1788 of 3565 sources
+2022-04-21 16:42:02,446 [PID 10423] INFO  Postprocessed 1937 of 3565 sources
+2022-04-21 16:42:02,456 [PID 10423] INFO  Postprocessed 2086 of 3565 sources
+2022-04-21 16:42:02,458 [PID 10423] INFO  Postprocessed 2235 of 3565 sources
+2022-04-21 16:42:02,461 [PID 10423] INFO  Postprocessed 2384 of 3565 sources
+2022-04-21 16:42:02,467 [PID 10423] INFO  Postprocessed 2533 of 3565 sources
+2022-04-21 16:42:02,475 [PID 10423] INFO  Postprocessed 2682 of 3565 sources
+2022-04-21 16:42:02,476 [PID 10423] INFO  Postprocessed 2831 of 3565 sources
+2022-04-21 16:42:02,477 [PID 10423] INFO  Postprocessed 2969 of 3565 sources
+2022-04-21 16:42:02,478 [PID 10423] INFO  Postprocessed 3118 of 3565 sources
+2022-04-21 16:42:02,490 [PID 10423] INFO  Postprocessed 3267 of 3565 sources
+2022-04-21 16:42:02,498 [PID 10423] INFO  Postprocessed 3416 of 3565 sources
+2022-04-21 16:42:02,501 [PID 10423] INFO  Postprocessed 3565 of 3565 sources
+2022-04-21 16:42:02,546 [PID 10423] INFO Waiting for server...
+2022-04-21 16:42:02,551 [PID 10423] SERVER  Connection established
+2022-04-21 16:42:02,552 [PID 10423] SUCCESS No type errors found
+2022-04-21 16:42:02,552 [PID 10423] SERVER  Processing request (DisplayTypeError())...
+2022-04-21 16:45:37,540 [PID 11178] INFO Waiting for server...
+2022-04-21 16:45:37,545 [PID 11178] SERVER  Connection established
+2022-04-21 16:45:37,545 [PID 11178] SUCCESS No type errors found
+2022-04-21 16:45:37,546 [PID 11178] SERVER  Processing request (DisplayTypeError())...
+2022-04-21 16:49:12,014 [PID 11784] INFO Waiting for server...
+2022-04-21 16:49:12,020 [PID 11784] SERVER  Connection established
+2022-04-21 16:49:12,021 [PID 11784] SERVER  Processing request (DisplayTypeError())...
+2022-04-21 16:49:12,021 [PID 11784] ERROR Found 1 type error!
+2022-04-21 16:49:12,021 [PID 11784] PERFORMANCE  Server request: 0.00s
+2022-04-21 16:50:45,604 [PID 12109] INFO Waiting for server...
+2022-04-21 16:50:45,609 [PID 12109] SERVER  Connection established
+2022-04-21 16:50:45,609 [PID 12109] SUCCESS No type errors found
+2022-04-21 16:50:45,609 [PID 12109] SERVER  Processing request (DisplayTypeError())...
+2022-04-21 16:52:13,904 [PID 12360] INFO Waiting for server...
+2022-04-21 16:52:13,910 [PID 12360] SERVER  Connection established
+2022-04-21 16:52:13,910 [PID 12360] SERVER  Processing request (DisplayTypeError())...
+2022-04-21 16:52:13,911 [PID 12360] ERROR Found 1 type error!
+2022-04-21 16:52:13,911 [PID 12360] PERFORMANCE  Server request: 0.00s

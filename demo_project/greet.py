@@ -1,12 +1,10 @@
 
-def greet(subject, repeat_count):
+def greet(subject: str) -> None:
     greeting = "Hello " + subject + "!"
-    for _ in range(repeat_count):
-    	print(greeting)
+    print(greeting)
 
-def main():
-    repeat_count = input("Greet how many times: ")
-    greet("World", repeat_count)
+def main() -> None:
+    greet("World")
 
 if __name__ == "__main__":
     main()
