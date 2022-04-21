@@ -19,7 +19,7 @@ class Shelter:
         for name in input['people']:
             self.people.append(Person(name))
 
-    def run(self):
+    def simulate_hour(self):
         # Some random animal interactions
         all_animals = self.cats + self.dogs
         for _ in range(random.randint(0, 5)):

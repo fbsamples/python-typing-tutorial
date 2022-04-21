@@ -4,27 +4,22 @@ from shelter import Shelter
 
 
 def print_stats(shelter):
-    # Print counts.
     cats = str(len(shelter.cats))
     dogs = str(len(shelter.dogs)) 
-    print("There are " + cats + " cats, " + dogs + " dogs.")
-
-    # Print ratio.
     ratio = str(cats / dogs)
-    print("Ratio of cats:dogs is " + ratio)
+    print("There are " + cats + " cats, " + dogs + " dogs. Ratio: " + ratio)
 
 
-def main():
-    shelter = Shelter()
-
-    with open('data.json') as json_file:
-        data = json.load(json_file)
-        shelter.populate(data)
-
-    stats = print_stats(shelter)
-    print("Initial: " + stats)
-    shelter.run()
+def run(shelter):
+    for hour in range(1, 9):
+        stats = print_stats(shelter)
+        print("Stats at hour " + str(hour) + ": "  + stats)
+        shelter.simulate_hour()
 
 
 if __name__ == "__main__":
-    main()
+    shelter = Shelter()
+    with open('data.json') as json_file:
+        data = json.load(json_file)
+        shelter.populate(data)
+    run(shelter)
