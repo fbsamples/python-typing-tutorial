@@ -2,6 +2,8 @@
 
 import random
 
+from typing import List
+
 class Creature:
     def __init__(self, name):
         self.name = name

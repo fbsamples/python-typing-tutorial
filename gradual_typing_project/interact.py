@@ -1,5 +1,9 @@
 # Helper library for creature interactions
 
+from typing import Any
+
+from creature import Creature, Person, Cat, Dog
+
 def are_enemies(creature_a, creature_b):
     return creature_a in creature_b.enemies or creature_b in creature_a.enemies 
 
