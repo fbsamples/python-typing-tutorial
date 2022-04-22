@@ -3,17 +3,18 @@ import json
 from shelter import Shelter
 
 
-def print_stats(shelter):
+def get_ratio(shelter):
     cats = str(len(shelter.cats))
-    dogs = str(len(shelter.dogs)) 
-    ratio = str(cats / dogs)
-    print("There are " + cats + " cats, " + dogs + " dogs. Ratio: " + ratio)
+    print("There are " + cats + " cats.")
+    dogs = str(len(shelter.dogs))
+    print("There are " + dogs + " dogs.")
+    return cats * 1.0 / dogs
 
 
 def run(shelter):
     for hour in range(1, 9):
-        stats = print_stats(shelter)
-        print("Stats at hour " + str(hour) + ": "  + stats)
+        ratio = get_ratio(shelter)
+        print("Ratio at hour " + str(hour) + ": "  + ratio)
         shelter.simulate_hour()
 
 
