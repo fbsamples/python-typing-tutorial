@@ -12,15 +12,6 @@ class Creature:
         pass
 
 
-class Person(Creature):
-    def __init__(self, name):
-        self.name = name
-        self.pets = []
-
-    def adopt(self, pet):
-        self.pets.append(pet)
-
-
 class Cat(Creature):
     def __init__(self, name):
         self.name = name

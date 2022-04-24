@@ -1,26 +1,26 @@
 import json
 
-from shelter import Shelter
+from park import Park
 
 
-def get_ratio(shelter):
-    cats = str(len(shelter.cats))
+def get_ratio(park):
+    cats = str(len(park.cats))
     print("There are " + cats + " cats.")
-    dogs = str(len(shelter.dogs))
+    dogs = str(len(park.dogs))
     print("There are " + dogs + " dogs.")
     return cats * 1.0 / dogs
 
 
-def run(shelter):
+def run(park):
     for hour in range(1, 9):
-        ratio = get_ratio(shelter)
+        ratio = get_ratio(park)
         print("Ratio at hour " + str(hour) + ": "  + ratio)
-        shelter.simulate_hour()
+        park.simulate_hour()
 
 
 if __name__ == "__main__":
-    shelter = Shelter()
+    park = Park()
     with open('data.json') as json_file:
         data = json.load(json_file)
-        shelter.populate(data)
-    run(shelter)
+        park.populate(data)
+    run(park)

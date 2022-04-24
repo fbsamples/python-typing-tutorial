@@ -2,7 +2,7 @@
  
 from typing import Any
 
-from creature import Creature, Person, Cat, Dog
+from creature import Creature, Cat, Dog
 
 def are_enemies(a, b):
     return a in b.enemies or b in a.enemies 
@@ -18,9 +18,4 @@ def play(a, b):
     else:
         a.meet(b)
         b.meet(a)
-
-def adopt(person, pet):
-    pet.meet(person)
-    if are_friends(person, pet):
-        person.adopt(pet)
     
