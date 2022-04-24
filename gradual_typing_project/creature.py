@@ -27,17 +27,11 @@ class Cat(Creature):
         self.friends = []
         self.enemies = []
 
-    def make_friend(self, friend):
-        self.friends.append(friend)
-
-    def make_enemy(self, enemy):
-        self.enemies.append(enemy)
-
     def meet(self, other):
         if random.random() < 0.5:
-            self.make_friend(other)
+            self.friends.append(other)
         else:
-            self.make_enemy(other)
+            self.enemies.append(other)
 	
 
 class Dog(Creature):
@@ -45,8 +39,5 @@ class Dog(Creature):
         self.name = name
         self.friends = []
 
-    def make_friend(self, friend):
-        self.friends.append(friend)
-
     def meet(self, other):
-        self.make_friend(other)
+        self.friends.append(other)
