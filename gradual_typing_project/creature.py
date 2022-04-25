@@ -19,7 +19,7 @@ class Cat(Creature):
         self.enemies = []
 
     def meet(self, other):
-        if random.random() < 0.5:
+        if random.random() < 0.6:
             self.friends.append(other)
         else:
             self.enemies.append(other)

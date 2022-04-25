@@ -1,20 +1,23 @@
 import json
-
 from park import Park
+from typing import Optional
 
 
-def get_ratio(park):
-    cats = str(len(park.cats))
-    print("There are " + cats + " cats.")
-    dogs = str(len(park.dogs))
-    print("There are " + dogs + " dogs.")
-    return cats * 1.0 / dogs
+def get_cat_dog_ratio(park):
+    cats = len(park.inside_park["cats"])
+    dogs = len(park.inside_park["dogs"])
+    print(f"There are {cats} cats and {dogs} dogs in the park.")
+    if dogs > 0:
+        return cats / dogs
 
 
 def run(park):
     for hour in range(1, 9):
-        ratio = get_ratio(park)
-        print("Ratio at hour " + str(hour) + ": "  + ratio)
+        print(f"Hour: {hour}")
+        cat_dog_ratio = get_cat_dog_ratio(park)
+        dog_cat_ratio = 1 / cat_dog_ratio
+        print("Ratio of cats to dogs is" + cat_dog_ratio)
+        print("Ratio of dogs to cats is " + dog_cat_ratio)
         park.simulate_hour()
 
 

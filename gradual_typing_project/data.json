@@ -1,4 +1,62 @@
-{
-    "cats": ["Fluffy", "Loki", "Boo"],
-    "dogs": ["Courage", "Goofy"]
-}
+[
+    {
+        "name": "Fluffy",
+        "type": "cat",
+        "in_park": true
+    },
+    {
+        "name": "Loki",
+        "type": "cat",
+        "in_park": true
+    },
+    {
+        "name": "Boo",
+        "type": "cat",
+        "in_park": false
+    },
+    {
+        "name": "Magic",
+        "type": "cat",
+        "in_park": false
+    },
+    {
+        "name": "Leo",
+        "type": "cat",
+        "in_park": true
+    },
+    {
+        "name": "Bella",
+        "type": "dog",
+        "in_park": false
+    },
+    {
+        "name": "Blue",
+        "type": "dog",
+        "in_park": false
+    },
+    {
+        "name": "Goofy",
+        "type": "dog",
+        "in_park": true
+    },
+    {
+        "name": "Piper",
+        "type": "dog",
+        "in_park": true
+    },
+    {
+        "name": "Courage",
+        "type": "dog",
+        "in_park": true
+    },
+    {
+        "name": "Meep",
+        "type": "cat",
+        "in_park": true
+    },
+    {
+        "name": "Lucky",
+        "type": "dog",
+        "in_park": false
+    }
+]
