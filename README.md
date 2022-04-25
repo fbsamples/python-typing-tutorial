@@ -14,27 +14,39 @@ The four sample projects included correspond to each section of the PyCon 2022 "
 You'll want a python 3.10 environment and `watchman`, along with the
 latest version of the `pyre-check` package
 
-To get Python 3.10 we recommend using `pyenv`, which is what we'll
-use here although there are usually other ways to get it (for example
-adding a repositiory with the latest python release to your
-system package manager).
-
-
-### Installing pyenv and watchman
+### Installing watchman
 
 #### On MacOS
 
 ```bash
-brew install pyenv watchman
+brew install watchman
 ```
 
 #### On Ubuntu
 
 ```bash
-# get watchman and pyenv dependencies
+sudo apt-get -y watchman
+```
 
-sudo apt-get -y \
-    watchman \
+
+### Installing Pyenv
+
+How exactly to get the latest Python release varies system to system,
+and you may already use a solution such as `conda`.
+
+We have instructions for using `pyenv` for this, but you're welcome
+to use any other approach you know.
+
+#### On MacOS
+
+```bash
+brew install pyenv
+```
+
+#### On Ubuntu
+
+```bash
+sudo apt-get -y watchman\
     git make build-essential libssl-dev zlib1g-dev libbz2-dev \
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
     libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev \
@@ -79,8 +91,7 @@ Then in a new shell:
 pyenv install 3.10.4
 ```
 
-
-### Setting up the tutorial repository
+### Clonning the tutorial repository and installing pyre-check
 
 
 You can clone this repo in one of two ways:
@@ -111,9 +122,6 @@ which should spit out:
 ```
 ƛ No type errors found
 ```
-
-
-### On MacOS:vs
 
 ## Contributing
 
