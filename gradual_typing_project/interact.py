@@ -12,9 +12,11 @@ def are_friends(a, b):
 
 def play(a, b):
     if are_friends(a, b):
-        print("{} and {} get along!".format(a.name, b.name))
+        print(f"{a.name} and {b.name} get along!")
     elif are_enemies(a, b):
-        print("{} and {} have a fight!".format(a.name, b.name))
+        print(f"{a.name} and {b.name} have a fight!")
+        a.chase(b)
+        b.chase(a)
     else:
         a.meet(b)
         b.meet(a)
