@@ -7,8 +7,7 @@ def get_cat_dog_ratio(park):
     cats = len(park.inside_park["cats"])
     dogs = len(park.inside_park["dogs"])
     print(f"There are {cats} cats and {dogs} dogs in the park.")
-    if dogs > 0:
-        return cats / dogs
+    return cats / dogs
 
 
 def run(park):
