@@ -9,6 +9,10 @@ The four sample projects included correspond to each section of the PyCon 2022 "
 3. `gradual_typing_project`: Example project for applying type checking modes and other approaches to gradually increasing type coverage.
 4. `typing_pattern_exercises`: More detailed and advanced Python patterns to practice expressing dynamic behavior in the type system
 
+## Resources
+
+[Tutorial Handout Sheet](https://docs.google.com/document/d/15QZo9Sj_9RQJ79QdJdafRGITjU72jlQbMfQotnTVETo/edit?usp=sharing)
+
 ## Setting up
 
 You'll want a python 3.10 environment and `watchman`, along with the
