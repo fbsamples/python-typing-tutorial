@@ -1,0 +1,19 @@
+name: Type check `demo_project`
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Pyre Action
+        uses: facebook/pyre-action@main
+        with:
+          repo-directory: './demo_project'
