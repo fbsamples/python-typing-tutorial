@@ -1,6 +1,6 @@
 # Helper library for creature interactions
  
-from creature import Creature, Cat, Dog
+from pet import Pet, Cat, Dog
 from typing import Any
 
 

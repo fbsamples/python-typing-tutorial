@@ -1,7 +1,7 @@
 # Simulate creature activity in the park
 
 import random
-from creature import Cat, Dog
+from pet import Cat, Dog
 from interact import play
 
 

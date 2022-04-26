@@ -1,17 +1,17 @@
-# Basic creature types
+# Basic pet types
 
 import random
 from typing import List
 
 
-class Creature:
+class Pet:
     def __init__(self, name):
         self.name = name
 
     def meet(self, other):
         pass
 
-class Cat(Creature):
+class Cat(Pet):
     def __init__(self, name):
         self.name = name
         self.friends = []
@@ -29,7 +29,7 @@ class Cat(Creature):
         print(f"{self.name} chases {other.name}!")
 	
 
-class Dog(Creature):
+class Dog(Pet):
     def __init__(self, name):
         self.name = name
         self.friends = []
