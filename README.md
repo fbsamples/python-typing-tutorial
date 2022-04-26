@@ -21,6 +21,8 @@ to try out Pyre on Linux in the browser.
 
 ### Installing watchman
 
+[Watchman](https://facebook.github.io/watchman/) is a file monitoring service that records when files change. It is required to run a type checker server that delivers fast, incremental results based on file updates. Without it, you will need to run a full `pyre check` that type checks the entire project each time. 
+
 #### On MacOS
 
 ```bash
