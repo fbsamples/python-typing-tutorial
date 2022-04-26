@@ -29,7 +29,7 @@ sudo apt-get -y watchman
 ```
 
 
-### Installing Pyenv
+### Installing Python 3.10
 
 How exactly to get the latest Python release varies system to system,
 and you may already use a solution such as `conda`.
@@ -41,7 +41,19 @@ to use any other approach you know.
 
 ```bash
 brew install pyenv
+
+echo '
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
+eval "$(pyenv init -)"
+' >> ~/.profile
+
+. ~/.profile
+
+pyenv install 3.10.4
 ```
+
 
 #### On Ubuntu
 
@@ -51,8 +63,18 @@ sudo apt-get -y watchman\
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
     libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev \
     
-# clone pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+echo '
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
+eval "$(pyenv init -)"
+' >> ~/.profile
+
+. ~/.profile
+
+pyenv install 3.10.4
 ```
 
 #### On windows:
@@ -64,7 +86,7 @@ We recommend using the Windows Subsystem for Linux:
 - When it restarts, the `Ubuntu-20.04` application should open
   - Create a user. We recommend reusing the user from your
     windows install, but you could create a user just for pycon
-  - Now, follow the `Ubuntu` instructions
+  - Now, follow the `Ubuntu` instructions above.
   
 From this point forward, to work with pyre you can:
 - Open the `Ubuntu-20.04` application
@@ -75,23 +97,8 @@ From this point forward, to work with pyre you can:
   - This will open up the directory in windows explorer.
   - From there you can do things like open files in VSCode.
 
-### Configuring Pyenv and installing Python 3.10
 
-In your `~/.profile`, write
-
-```bash
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$PYENV_ROOT/shims:$PATH"
-eval "$(pyenv init -)"
-```
-
-Then in a new shell:
-```
-pyenv install 3.10.4
-```
-
-### Clonning the tutorial repository and installing pyre-check
+### Setting up pyre-check in a venv
 
 
 You can clone this repo in one of two ways:
@@ -103,11 +110,10 @@ You can clone this repo in one of two ways:
 Then, set it up to use Python 3.10.4:
 ```
 cd python-typing-tutorial
-pyenv local 3.10.4
-```
 
-Finally, install the latest release pyre:
-```
+PYENV_VERSION=3.10.4 python -m venv pyre-venv
+. pyre-venv/bin/activate
+
 pip install pyre-check
 ```
 
