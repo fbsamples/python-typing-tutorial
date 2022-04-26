@@ -1,4 +1,6 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# This is a read-only exercise.
 
 from typing import overload
 

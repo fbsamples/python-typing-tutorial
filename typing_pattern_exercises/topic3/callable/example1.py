@@ -48,6 +48,6 @@ def get_senior_employees(employees: Iterable[Employee]) -> list[Employee]:
     return my_filter(lambda employee: employee.tenure >= 10, employees)
 
 
-# Please fill in the type annotation of the `my_filter` function, so all of its
-# callsites in this file could type check. Avoid using union type in your
-# annotation, if possible.
+# TODO: Please fill in the type annotation of the `my_filter` function, so all
+# of its callsites in this file could type check. Avoid using union type in
+# your annotation, if possible.

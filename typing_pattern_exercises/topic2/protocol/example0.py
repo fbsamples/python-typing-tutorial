@@ -11,8 +11,8 @@ def read_and_process(input_channel):
     _process(message)
 
 
-# Without additional context, what do think should be the type of the parameter
-# `input_channel`?
+# Question: without additional context, what do think should be the type of the
+# parameter `input_channel`?
 
 
 # ----------------------------------------------------------------------------
@@ -25,7 +25,8 @@ def read_and_process(input_channel):
 def test_file(filename: str) -> None:
     # https://docs.python.org/3/library/functions.html#open
     with open(filename, "rb") as f:
-        # You can use reveal_type() here to check the type of f
+        # The type of `f` here would be `io.BufferedReader`. You can confirm it
+        # by adding a `reveal_type(f)`.
         read_and_process(f)
 
 
@@ -70,9 +71,9 @@ def test_bytes_buffer(content: bytes) -> None:
 # ----------------------------------------------------------------------------
 
 
-# Given all the usages described in the previous section, try type-annotating
-# the `read_and_process()` function appeared on top of this file, so all of its
-# callers in this file type checks.
+# TODO: Given all the usages described in the previous section, try
+# type-annotating the `read_and_process()` function appeared on top of this
+# file, so all of its callers in this file type checks.
 
 # Also think about the scenario where in the future, we may further extend our
 # application and define more kinds of input channels (i.e. define more classes

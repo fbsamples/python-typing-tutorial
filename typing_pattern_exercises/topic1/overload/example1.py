@@ -1,4 +1,7 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 # PEP 586 introduces the notion of "literal type" (see
 # https://docs.python.org/3/library/typing.html#typing.Literal). A literal type
@@ -30,6 +33,8 @@ only_take_true(True)  # OK
 # following function. It's a simple wrapper around `subprocess.run`. The idea
 # is that we have a flag to control whether the return code or the stdout of
 # the subprocess invocation should be returned.
+# TODO: Type annotate the `run` function. The entire file should have no type
+# errors if you did it correctly.
 
 import subprocess
 
@@ -49,7 +54,6 @@ def run(command, keep_stdout=False):
 
 
 # Below are some tests to help you verify that the annotation above is working.
-# The entire file should have no type errors if you did it correctly.
 def verify0(r: int) -> None:
     ...
 

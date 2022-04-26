@@ -1,6 +1,6 @@
 # pyre-strict
 
-# Consider the following class hierarchy:
+# This is a read-only exercise. Consider the following class hierarchy:
 
 
 class Pet:
@@ -41,8 +41,9 @@ test()
 
 # Notice that the type checker is not OK with this file: it reports a type error.
 # Look at the type error and see if you can figure out the rationale.
-# Also consider what would happen if the type checker accepts the code as-is:
-# can you think of a type-safe thing that the `process_pets()` function may do,
-# which can lead to a crash in the `test()` function? Trying replacing the body
-# of `process_pets()` with what you came up with, and run this file with the
-# Python interpreter to verify your thoughts.
+# Also consider what would happen if the type checker accepts the code as-is.
+
+# Question: can you think of a type-safe thing that the `process_pets()`
+# function may do, which can lead to a crash in the `test()` function? Trying
+# replacing the body of `process_pets()` with what you came up with, and run
+# this file with the Python interpreter to verify your thoughts.

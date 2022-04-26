@@ -32,5 +32,5 @@ def test(inputs: str) -> None:
     query(inputs, on_success=process_query_result, on_failure=log_error)
 
 
-# Please fill in the type annotation of the `query` function, so the `test()`
-# function could type check.
+# TODO: Please fill in the type annotation of the `query` function, so the
+# `test()` function could type check.

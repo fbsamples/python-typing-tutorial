@@ -1,4 +1,7 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 # ParamSpec can be used for more than just preserving function signatures. It
 # can also be used to perform certain signature transformations. Below is a
@@ -54,8 +57,9 @@ def test() -> None:
 
 test()
 
-# Your exercise is to add type annotations to the `to_sync` decorator using
-# `ParamSpec`. If you did it correctly, the entire file should type check.
+# TODO: Your exercise is to add type annotations to the `to_sync` decorator
+# using `ParamSpec`. If you did it correctly, the entire file should type
+# check.
 # For your information, async functions can generally be typed with `Callable`s
 # in the same way as normal functions, except that the return type needs to be
 # wrapped in an `Awaitable`. For example:

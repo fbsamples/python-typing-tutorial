@@ -1,7 +1,8 @@
 # pyre-strict
 
 # This example shows why it is not safe to have overriding method change the
-# parameter type to be more specific. Try run this file with a Python interpreter.
+# parameter type to be more specific. Try run this file with a Python
+# interpreter (e.g. `python3 example2.py`).
 
 
 class Pet:

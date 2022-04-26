@@ -44,7 +44,7 @@ def run_test(test_case, fail_fast=False):
     return test_case(fail_fast=fail_fast)
 
 
-# Please add type annotations to the `create_test_suite` function and the
+# TODO: Please add type annotations to the `create_test_suite` function and the
 # `run_test` function. Below are code that helps verify whether your
 # annotations work or not.
 

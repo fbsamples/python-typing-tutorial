@@ -1,4 +1,7 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 # This exercise will be an extension of the test framework exercise we had in
 # the callback protocol section. Please go through that exercise first before
@@ -80,7 +83,7 @@ def run_test(test_case, fail_fast=False):
     )
 
 
-# Please add type annotations to the `test_case` decorator, the
+# TODO: Please add type annotations to the `test_case` decorator, the
 # `create_test_suite` function, and the `run_test` function. Below are code
 # that helps verify whether your annotations work or not. You can also try
 # running them for real by invoking Python interpreter on this file.

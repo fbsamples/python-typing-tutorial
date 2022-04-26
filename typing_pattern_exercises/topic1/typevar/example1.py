@@ -1,6 +1,10 @@
 # pyre-strict
 
-# Try annotating this function, using typevar
+# TODO: Try annotating this function, using typevar
+# Hint: here are some example behaviors of this function:
+# flatten_list([[1], [], [2, 3]]) == [1, 2, 3]
+# flatten_list([["foo", "bar"], ["baz"]]) == ["foo", "bar", "baz"]
+# flatten_list([[[0], [1]], [[2, 3]]]) == [[0, 1], [2, 3]]
 def flatten_list(inputs):
     return [x for y in inputs for x in y]
 

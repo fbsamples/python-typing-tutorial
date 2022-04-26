@@ -1,7 +1,8 @@
 # pyre-strict
 
 # This example shows why it is not safe to have overriding method change the
-# return type to be more general. Try run this file with a Python interpreter.
+# return type to be more general. Try run this file with a Python interpreter
+# (e.g. `python3 example1.py`).
 
 
 class Pet:

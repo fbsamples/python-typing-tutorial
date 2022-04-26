@@ -1,8 +1,9 @@
 # pyre-strict
 
-# Try annotating the decorator below yourself. Try avoid union types and make
-# your annotation as general as possible. For the sake of simplicity, let's
-# simply ignore the issue with keyword arguments for now.
+# TODO: Try annotating the decorator below yourself. Try avoid union types and
+# make your annotation as general as possible. For the sake of simplicity,
+# let's simply ignore the issue with keyword arguments for now. The entire file
+# should have no type errors if you did it correctly.
 
 
 def my_decorator(original_func):
@@ -16,7 +17,6 @@ def my_decorator(original_func):
 
 
 # Below are some tests to help you verify that the annotation above is working.
-# The entire file should have no type errors if you did it correctly.
 
 
 @my_decorator

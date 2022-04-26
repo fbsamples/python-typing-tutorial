@@ -1,4 +1,7 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 # TypeVars can also take a "bound" argument. Suppose we have a class hierachy like this:
 
@@ -29,12 +32,28 @@ def make_cute(pet):
 
 
 # It's apparent that the function has the same parameter and return type, so we
-# might want to use a type var. Try annotating the function above with a simple
-# typevar and see what happens -- why do you think the type checker complains?
+# might want to use a type var.
+# TODO: Try annotating the function above with a simple typevar and see what
+# happens -- why do you think the type checker complains?
 
-# Now, add a "bound" argument to your typevar like this:
+# TODO: Now, add a "bound" argument to your typevar like this:
 # T = TypeVar("T", bound=Pet)
 # This basically tells the type checker that within the function body, T is
 # guaranteed to be a subclass of Pet, which makes it possible for us to access
-# its `name` field within the function. Such trick is often useful, for
-# example, when you use the builder pattern.
+# its `name` field within the function. Try invoking the function with an int
+# or string and see what happens!
+
+# Such trick is often useful, for example, when you use the builder pattern.
+
+
+def verify_dog(dog: Dog) -> None:
+    ...
+
+
+def verify_cat(cat: Cat) -> None:
+    ...
+
+
+def test() -> None:
+    verify_dog(make_cute(Dog("Fido")))
+    verify_cat(make_cute(Dog("Fido")))

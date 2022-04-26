@@ -5,8 +5,9 @@ def _receive_bytes_data() -> bytes:
     ...
 
 
-# This is a function that's intended to receive data from the network. Try add
-# type annotation to it using union type.
+# TODO: This is a function that's intended to receive data from the network.
+# Try add type annotation to it using union type. This entire file should type
+# check if you annotate it correctly.
 def receive_data(encoding=None):
     bytes_data = _receive_bytes_data()
     if encoding is None:
@@ -16,8 +17,6 @@ def receive_data(encoding=None):
 
 
 # Code below are used to verify if your annotated the above function correctly.
-# This entire file should type check if you annotate the above
-# `receive_data()` function correctly.
 def _process_bytes(data: bytes) -> None:
     ...
 

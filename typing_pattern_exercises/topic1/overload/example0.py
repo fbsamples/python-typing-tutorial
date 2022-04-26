@@ -14,7 +14,9 @@ assert round(42.06, ndigits=1) == 42.1
 
 # The exercise here is to try adding type annotation to this builtin functions.
 # To avoid potential naming conflict, let's write our own wrapper of the
-# `round` function and type annotate that instead:
+# `round` function and operate that instead.
+# TODO: Type annotate the `my_round` function. The entire file should have no
+# type errors if you did it correctly.
 
 
 def my_round(value, ndigits=None):
@@ -23,7 +25,6 @@ def my_round(value, ndigits=None):
 
 
 # Below are some tests to help you verify that the annotation above is working.
-# The entire file should have no type errors if you did it correctly.
 def verify0(r: int) -> None:
     ...
 

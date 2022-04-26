@@ -1,4 +1,7 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 from typing import TypeVar
 
@@ -25,8 +28,8 @@ def test() -> int:
     return bar(42) + len(foo("abc"))
 
 
-# Try changing the definition of `bar` such that it reuses the same typevar T
-# as `foo`. How did your change affect type checking results?
+# TODO: Try changing the definition of `bar` such that it reuses the same
+# typevar T as `foo`. How did your change affect type checking results?
 
 
 # -----------------------------------------------------------------------------------------
@@ -44,8 +47,9 @@ def test(x: T) -> tuple[int, int]:
     return make_tuple_inner(0, 1)
 
 
-# Try changing the definition of `make_tuple_inner` such that it reuses the same typevar T
-# as `test`. How did your change affect type checking results?
+# TODO: Try changing the definition of `make_tuple_inner` such that it reuses
+# the same typevar T as `test`. How did your change affect type checking
+# results?
 
 
 # -----------------------------------------------------------------------------------------

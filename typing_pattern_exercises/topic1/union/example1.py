@@ -1,9 +1,12 @@
-# pyre-strict
+# pyre-ignore-all-errors
+
+# TODO: Change `pyre-ignore-all-errors` to `pyre-strict` on line 1, so we get
+# to see all type errors in this file.
 
 import pathlib
 
-# Here is a simple function that takes a file path and return its content. Try
-# add type annotations to this function.
+# Here is a simple function that takes a file path and return its content.
+# TODO: Try add type annotations to this function.
 def read_file(path):
     try:
         # https://docs.python.org/3/library/pathlib.html#pathlib.Path.read_text
@@ -12,15 +15,15 @@ def read_file(path):
         return None
 
 
-# Here is an alternative implementation that lets the exceptions escape. Try
-# type annotating this one as well.
+# Here is an alternative implementation that lets the exceptions escape. 
+# TODO: Try type annotating this one as well.
 def read_file_alternative(path):
     # https://docs.python.org/3/library/pathlib.html#pathlib.Path.read_text
     return path.read_text()
 
 
-# Compare the two functions above. Which one is more convenient to use? Which
-# one is safer to use?
+# Question: Compare the two functions above. Which one is more convenient to
+# use? Which one is safer to use?
 def _process_content(data: str) -> None:
     ...
 

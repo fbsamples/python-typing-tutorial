@@ -32,8 +32,8 @@ class Cat(Pet):
         print(f"{self.name} does not want to play with {other.name}")
 
 
-# Type-annotate the following functions without using union type. The function
-# should accepts both kinds of pets, but nothing else.
+# TODO: Type-annotate the following functions without using union type. The
+# function should accepts all kinds of pets, but nothing else.
 def befriend(pet0, pet1):
     pet0.play_with(pet1)
     pet1.play_with(pet0)
@@ -62,6 +62,6 @@ class Duck(Pet):
         print(f"{self.name} is playing by itself")
 
 
-# Trying executing this file with the Python interpreter to get a sense of why
-# the definition of `Duck` is problematic.
+# Trying executing this file with the Python interpreter (e.g. `python3
+# example.py`) to get a sense of why the definition of `Duck` is problematic.
 befriend(Dog("Fido"), Duck("Donald"))
