@@ -16,7 +16,7 @@ latest version of the `pyre-check` package.
 
 If you run into trouble, an alternative way to get started is to sign up
 for `repl.it` (you can sign in through github) and use
-[the PyrePycon2022 repl](https://replit.com/@stroxler/PyrePycon2022-1?v=1)
+[the PyrePycon2022 repl](https://replit.com/@stroxler/PyrePycon2022-nix?v=1)
 to try out Pyre on Linux in the browser.
 
 ### Installing watchman
