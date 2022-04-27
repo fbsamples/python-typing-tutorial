@@ -21,7 +21,7 @@ def test() -> None:
     process_row(row=fred)
 
 
-# The develper was confused about the type error. He understands that the
+# The developer was confused about the type error. He understands that the
 # declared row does not fully conform to the SQLTypes typing, but it's
 # effectively a subset. Why is this an incompatible type?
 
