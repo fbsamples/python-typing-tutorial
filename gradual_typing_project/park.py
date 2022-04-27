@@ -3,7 +3,7 @@
 import random
 from pet import Cat, Dog
 from interact import play
-from typing import Dict, List
+from typing import Any, Dict, List
 
 
 class Park:
