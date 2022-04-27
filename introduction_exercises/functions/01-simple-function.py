@@ -5,11 +5,11 @@
 # incorrectly. (You do not need to fix the bug.)
 
 def num_vowels(s):
-   result = 0
-   for letter in s:
-       if letter in "aeiouAEIOU":
-           result += 1
-   return result
+    result = 0
+    for letter in s:
+        if letter in "aeiouAEIOU":
+            result += 1
+    return result
 
 
 num_vowels("PyCon is cool")

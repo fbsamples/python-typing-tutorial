@@ -18,6 +18,7 @@ class Auditorium:
        }
 
    # Step 3: Annotate this method.
+   # (If you get stuck, put a red sticky on your laptop.)
    def add_attendees(self, attendees):
        for (row, column, attendee) in attendees:
            first_name, last_name = attendee.split(" ")
