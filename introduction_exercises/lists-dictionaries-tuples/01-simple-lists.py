@@ -17,3 +17,14 @@ def strings_to_characters(strings):
 # Step 3: Identify the bug present in one of these calls.
 strings_to_characters(["PyCon", "Typing", "Tutorial"])
 strings_to_characters(["PyCon", "Typing", "Tutorial", 2022, "is", "now"])
+
+# Step 4: What do you think `Union[int, str]` means?
+# Hint: You've seen `Optional[str]`, which meant the type was either str or
+# None. Can you see the similarity?
+
+# Step 5: What will be the type of the value you get from a list of type
+# `List[Union[int, str]]`? Uncomment the following lines, use
+# `reveal_type(<variable>)`, and run Pyre to see their types.
+
+# xs = ["PyCon", "Typing", "Tutorial", 2022, "is", "now"]
+# y = xs[0]
