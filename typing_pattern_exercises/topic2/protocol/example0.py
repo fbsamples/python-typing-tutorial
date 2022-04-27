@@ -18,7 +18,7 @@ def read_and_process(input_channel):
 # ----------------------------------------------------------------------------
 
 
-# It seems like `input_channel` can be many things. For examle, we could pass
+# It seems like `input_channel` can be many things. For example, we could pass
 # an opened file to it:
 
 
