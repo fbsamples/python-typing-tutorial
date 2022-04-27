@@ -101,6 +101,12 @@ Blue and Boo get along!
 ### Print Coverage Statistics (Before)
 
 ```
+(venv) szhu@szhu-mbp gradual_typing_project % pyre statistics --print-summary
+ƛ Coverage summary:
+Overall annotation rate is 5.41%
+There are 0 total error suppressions inline (0 fixmes and 0 ignores)
+Of 4 modules, 0.0% are strict and 100.0% are unsafe
+Of 17 functions, 0.0% are fully annotated and 0.0% are partially annotated
 ```
 
 ### Apply MonkeyType Stubs
@@ -110,12 +116,20 @@ Blue and Boo get along!
 pet
 park
 interact
-(venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply pet
 (venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply park
-(venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply shelter
+(venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply interact
+(venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply pet
 ```
+
+If you run into NameError problems, this means that an inferred annotation is referencing a class or value that has not been defiend yet. This pattern arises in `pet.py` and can be fixed by quoting any annotations that are forward-references.
 
 ### Print Coverage Statistics (After)
 
 ```
+(venv) szhu@szhu-mbp gradual_typing_project % pyre statistics --print-summary
+ƛ Coverage summary:
+Overall annotation rate is 67.57%
+There are 0 total error suppressions inline (0 fixmes and 0 ignores)
+Of 4 modules, 0.0% are strict and 100.0% are unsafe
+Of 17 functions, 64.71% are fully annotated and 0.0% are partially annotated
 ```
