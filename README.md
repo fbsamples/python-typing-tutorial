@@ -116,7 +116,7 @@ You can clone this repo in one of two ways:
 - First fork it to your user using the "Fork" button, and then
   clone from that repository
 - Or, if you don't care about playing with github, just clone directly:
-  `git clone https://fbsamples/python-typing-tutorial.git`
+  `git clone https://github.com/fbsamples/python-typing-tutorial.git`
   
 Then, set it up to use Python 3.10.4:
 ```
