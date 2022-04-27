@@ -4,6 +4,8 @@
 
 Each link points to the online Pyre playground.
 
+NOTE: Open the playground link in a new tab! That way, you can refer back to this page for further exercises. Otherwise, the playground may clobber your tab's history.
+
 - [Simple function](https://pyre-check.org/play/?input=%23%20Step%201%3A%20Annotate%20the%20function%20signature%20of%20%60ints_to_repeated_strings%60%0A%0Adef%20ints_to_repeated_strings(ints%3A%20list%5Bint%5D)%20-%3E%20list%5Bstr%5D%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20%3E%3E%3E%20ints_to_repeated_strings(%5B1%2C%202%2C%203%2C%200%2C%20-1%2C%205%2C%20-100%5D)%0A%20%20%20%20%5B%221%22%2C%20%2222%22%2C%20%22333%22%2C%20None%2C%20None%2C%20%2255555%22%2C%20None%5D%0A%20%20%20%20%22%22%22%0A%20%20%20%20return%20%5Bstr(i)%20*%20i%20if%20i%20%3E%200%20else%20None%20for%20i%20in%20ints%5D)
 
 - [Multiple functions](https://pyre-check.org/play/?input=%23%20Step%201%3A%20Annotate%20the%20function%20signature%20of%20%60ints_to_repeated_strings%60%0A%0Adef%20ints_to_repeated_strings(ints%3A%20list%5Bint%5D)%20-%3E%20list%5Bstr%5D%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20%3E%3E%3E%20ints_to_repeated_strings(%5B1%2C%202%2C%203%2C%200%2C%20-1%2C%205%2C%20-100%5D)%0A%20%20%20%20%5B%221%22%2C%20%2222%22%2C%20%22333%22%2C%20None%2C%20None%2C%20%2255555%22%2C%20None%5D%0A%20%20%20%20%22%22%22%0A%20%20%20%20return%20%5Bstr(i)%20*%20i%20if%20i%20%3E%200%20else%20None%20for%20i%20in%20ints%5D)
