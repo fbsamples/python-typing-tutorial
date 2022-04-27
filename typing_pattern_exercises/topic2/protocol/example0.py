@@ -43,7 +43,7 @@ class SocketInputChannel:
     # only. It is horribly efficient and therefore not recommended for any
     # practical purpose. In production code, you may want to either leverage
     # `sock.makefile()` or to use an in-memory buffer along with a larger
-    # chunck size for `sock.recv()`
+    # chunk size for `sock.recv()`
     def readline(self) -> bytes:
         line = b""
         while not line.endswith(b"\n"):
