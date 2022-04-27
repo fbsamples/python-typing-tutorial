@@ -41,6 +41,22 @@ index 1a622eb..01f27c8 100644
 +        print("Ratio of cats to dogs is " + str(cat_dog_ratio))
 +        print("Ratio of dogs to cats is " + str(dog_cat_ratio))
          park.simulate_hour()
+
+diff --git a/gradual_typing_project/interact.py b/gradual_typing_project/interact.py
+index 274bac2..1e68539 100644
+--- a/gradual_typing_project/interact.py
++++ b/gradual_typing_project/interact.py
+@@ -15,8 +15,8 @@ def play(a, b):
+         print(f"{a.name} and {b.name} get along!")
+     elif are_enemies(a, b):
+         print(f"{a.name} and {b.name} have a fight!")
+-        a.chase(b)
+-        b.chase(a)
++        # a.chase(b)
++        # b.chase(a)
+     else:
+         a.meet(b)
+         b.meet(a)
 ```
 
 ### Run MonkeyType
