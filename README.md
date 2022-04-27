@@ -12,6 +12,7 @@ The four sample projects included correspond to each section of the PyCon 2022 "
 ## Resources
 
 [Tutorial Handout Sheet](https://docs.google.com/document/d/15QZo9Sj_9RQJ79QdJdafRGITjU72jlQbMfQotnTVETo/edit?usp=sharing)
+[Tutorial Slides (PDF)](https://drive.google.com/file/d/1Me1E6hCVb-28Ka1KpoNorSyZs-73-nRY/view?usp=sharing)
 
 ## Setting up
 
