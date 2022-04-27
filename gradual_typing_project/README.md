@@ -121,7 +121,7 @@ interact
 (venv) szhu@szhu-mbp gradual_typing_project % monkeytype apply pet
 ```
 
-If you run into NameError problems, this means that an inferred annotation is referencing a class or value that has not been defiend yet. This pattern arises in `pet.py` and can be fixed by quoting any annotations that are forward-references.
+If you run into NameError problems, this means that an inferred annotation is referencing a class or value that has not been defined yet. This pattern arises in `pet.py` and can be fixed by quoting any annotations that are forward-references.
 
 ### Print Coverage Statistics (After)
 
