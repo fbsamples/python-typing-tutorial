@@ -16,33 +16,33 @@ class Talk:
       return f"{self.hour % 12} {am_pm_string} - {self.title}"
 
 class PyCon:
-   """
-   >>> pycon = PyCon("Salt Lake City", 2022)
-   >>> pycon.add_talk(Talk("Securing Code with the Type System", 11))
-   >>> pycon.add_talk(Talk("Python Typing Tutorial", 13))
-   >>> print(pycon.calendar())
-   2022 PyCon at Salt Lake City
-   11 AM - Securing Code with the Type System
-   1 PM - Python Typing Tutorial
-   """
+    """
+    >>> pycon = PyCon("Salt Lake City", 2022)
+    >>> pycon.add_talk(Talk("Securing Code with the Type System", 11))
+    >>> pycon.add_talk(Talk("Python Typing Tutorial", 13))
+    >>> print(pycon.calendar())
+    2022 PyCon at Salt Lake City
+    11 AM - Securing Code with the Type System
+    1 PM - Python Typing Tutorial
+    """
 
-   def __init__(self, location: str, year: int) -> None:
-       self.location = location
-       self.year = year
-       self.talks: list[Talk] = []
+    def __init__(self, location: str, year: int) -> None:
+        self.location = location
+        self.year = year
+        self.talks: list[Talk] = []
 
-   def add_talk(self, talk: Talk) -> None:
-       self.talks.append(talk)
+    def add_talk(self, talk: Talk) -> None:
+        self.talks.append(talk)
 
-   def calendar(self) -> str:
-      """Return a string calendar of talks sorted by start time."""
+    def calendar(self) -> str:
+        """Return a string calendar of talks sorted by start time."""
 
-       def get_start_hour(talk: Talk) -> int:
-           return talk.start_hour
+        def get_start_hour(talk: Talk) -> int:
+            return talk.start_hour
 
-       sorted_talks = sorted(self.talks, key=get_start_hour)
-       talks = "\n".join(str(talk) for talk in sorted_talks)
-       return f"{self.year} PyCon at {self.location}\n{talks}"
+        sorted_talks = sorted(self.talks, key=get_start_hour)
+        talks = "\n".join(str(talk) for talk in sorted_talks)
+        return f"{self.year} PyCon at {self.location}\n{talks}"
 
 
 pycon = PyCon("Salt Lake City", 2022)

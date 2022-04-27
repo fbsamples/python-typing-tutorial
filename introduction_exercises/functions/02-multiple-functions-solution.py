@@ -4,17 +4,17 @@
 # Step 4: Green sticky on!
 
 def num_vowels(s: str) -> int:
-   result = 0
-   for letter in s:
-       if letter in "aeiouAEIOU":
-           result += 1
-   return result
+    result = 0
+    for letter in s:
+        if letter in "aeiouAEIOU":
+            result += 1
+    return result
 
 def get_name() -> str:
-   return "YOUR NAME HERE"
+    return "YOUR NAME HERE"
 
 def greet(name: str) -> None:
-   print("Hello " + name + "! Your name contains " + num_vowels(name) + " vowels.")
+    print("Hello " + name + "! Your name contains " + num_vowels(name) + " vowels.")
 
 # Step 5: Experiment - Is this call necessary? Does Pyre catch the above bug even without
 # this line? Does that match your model of how Pyre works?
