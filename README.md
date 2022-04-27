@@ -25,7 +25,7 @@ to try out Pyre on Linux in the browser.
 
 ### Installing watchman
 
-[Watchman](https://facebook.github.io/watchman/) is a file monitoring service that records when files change. It is required to run a type checker server that delivers fast, incremental results based on file updates. Without it, you will need to run a full `pyre check` that type checks the entire project each time and cannot use editor integration. 
+[Watchman](https://facebook.github.io/watchman/) is a file monitoring service that records when files change. It is required to run a type checker server that delivers fast, incremental results based on file updates. Without it, you will need to run a full `pyre check` that type checks the entire project each time and cannot use editor integration.
 
 #### On MacOS
 
@@ -73,7 +73,7 @@ sudo apt-get -y watchman\
     git make build-essential libssl-dev zlib1g-dev libbz2-dev \
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
     libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev \
-    
+
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo '
@@ -98,7 +98,7 @@ We recommend using the Windows Subsystem for Linux:
   - Create a user. We recommend reusing the user from your
     windows install, but you could create a user just for pycon
   - Now, follow the `Ubuntu` instructions above.
-  
+
 From this point forward, to work with pyre you can:
 - Open the `Ubuntu-20.04` application
 - Do any terminal actions (like running `pyre`) you want from
@@ -116,8 +116,8 @@ You can clone this repo in one of two ways:
 - First fork it to your user using the "Fork" button, and then
   clone from that repository
 - Or, if you don't care about playing with github, just clone directly:
-  `git clone https://fbsamples/python-typing-tutorial.git`
-  
+  `git clone https://github.com/fbsamples/python-typing-tutorial.git`
+
 Then, set it up to use Python 3.10.4:
 ```
 cd python-typing-tutorial
@@ -137,7 +137,7 @@ pyre
 ```
 which should spit out:
 ```
-ƛ No type errors found
++ No type errors found
 ```
 
 ## Contributing
