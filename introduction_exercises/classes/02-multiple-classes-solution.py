@@ -35,10 +35,12 @@ class PyCon:
        self.talks.append(talk)
 
    def calendar(self) -> str:
-       def get_hour(talk: Talk) -> int:
-           return talk.hour
+      """Return a string calendar of talks sorted by start time."""
 
-       sorted_talks = sorted(self.talks, key=get_hour)
+       def get_start_hour(talk: Talk) -> int:
+           return talk.start_hour
+
+       sorted_talks = sorted(self.talks, key=get_start_hour)
        talks = "\n".join(str(talk) for talk in sorted_talks)
        return f"{self.year} PyCon at {self.location}\n{talks}"
 
@@ -47,3 +49,4 @@ pycon = PyCon("Salt Lake City", 2022)
 pycon.add_talk(Talk("Securing Code with the Type System", 11))
 pycon.add_talk("Python Typing Tutorial")
 pycon.add_talk([Talk("Cool Talk", 14), Talk("Cool Talk II", 15)])
+print(pycon.calendar())

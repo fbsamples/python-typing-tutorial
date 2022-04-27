@@ -1,5 +1,4 @@
-# Step 1: Annotate the constructor and methods of the `PyCon` class.
-# Step 2: Identify the bug present in one or more of the three calls at the end.
+# NOTE: Skip down to the `PyCon` class for the first step.
 
 class Talk:
   """
@@ -15,6 +14,11 @@ class Talk:
       am_pm_string = "AM" if self.hour < 12 else "PM"
       return f"{self.hour % 12} {am_pm_string} - {self.title}"
 
+
+
+# Step 1: First, just read the following code to see if you can spot the bug(s).
+
+# Step 2: Annotate the constructor and methods of this class.
 class PyCon:
    """
    >>> pycon = PyCon("Salt Lake City", 2022)
@@ -26,6 +30,9 @@ class PyCon:
    1 PM - Python Typing Tutorial
    """
 
+   # Step 3: There is an empty container assigned to an attribute. Do you know
+   # how to annotate the attribute explicitly? (Hint: Use the same syntax as
+   # for variables.)
    def __init__(self, location, year):
        self.location = location
        self.year = year
@@ -35,15 +42,20 @@ class PyCon:
        self.talks.append(talk)
 
    def calendar(self):
-       def get_hour(talk):
-           return talk.hour
+      """Return a string calendar of talks sorted by start time."""
 
-       sorted_talks = sorted(self.talks, key=get_hour)
+       # Step 4: Nested functions need annotations too!
+       def get_start_hour(talk):
+           return talk.start_hour
+
+       sorted_talks = sorted(self.talks, key=get_start_hour)
        talks = "\n".join(str(talk) for talk in sorted_talks)
        return f"{self.year} PyCon at {self.location}\n{talks}"
 
 
+# Step 5: Identity the bug(s) in the following code (and any in the above code).
 pycon = PyCon("Salt Lake City", 2022)
 pycon.add_talk(Talk("Securing Code with the Type System", 11))
 pycon.add_talk("Python Typing Tutorial")
-pycon.add_talk([Talk("Cool Talk", 14), Talk("Cool Talk II", 15)])
+pycon.add_talk([Talk("Cool Talk", 14), Talk("The Cool Talk Strikes Back", 15)])
+print(pycon.calendar())
