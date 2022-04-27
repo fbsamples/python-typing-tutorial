@@ -53,7 +53,7 @@ class PyCon:
         return f"{self.year} PyCon at {self.location}\n{talks}"
 
 
-# Step 5: Identity the bug(s) in the following code (and any in the above code).
+# Step 5: Identify the bug(s) in the following code (and any in the above code).
 pycon = PyCon("Salt Lake City", 2022)
 pycon.add_talk(Talk("Securing Code with the Type System", 11))
 pycon.add_talk("Python Typing Tutorial")
