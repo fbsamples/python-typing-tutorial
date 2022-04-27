@@ -10,6 +10,8 @@ $ pyre check
 
 Or you can click the links on this page which brings you to the online playground, and do the exercises there. 
 
+NOTE: Open the playground link in a new tab! That way, you can refer back to this page for further exercises. Otherwise, the playground may clobber your tab's history.
+
 ## Topic 1: Working with values of different types
 
 ### Union Type
