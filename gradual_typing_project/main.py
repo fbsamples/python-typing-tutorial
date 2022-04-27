@@ -15,7 +15,7 @@ def run(park):
         print(f"Hour: {hour}")
         cat_dog_ratio = get_cat_dog_ratio(park)
         dog_cat_ratio = 1 / cat_dog_ratio
-        print("Ratio of cats to dogs is" + cat_dog_ratio)
+        print("Ratio of cats to dogs is " + cat_dog_ratio)
         print("Ratio of dogs to cats is " + dog_cat_ratio)
         park.simulate_hour()
 
