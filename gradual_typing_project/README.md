@@ -41,20 +41,6 @@ index 1a622eb..01f27c8 100644
 +        print("Ratio of cats to dogs is " + str(cat_dog_ratio))
 +        print("Ratio of dogs to cats is " + str(dog_cat_ratio))
          park.simulate_hour()
-
-
-diff --git a/gradual_typing_project/pet.py b/gradual_typing_project/pet.py
-index d47ddd4..add6792 100644
---- a/gradual_typing_project/pet.py
-+++ b/gradual_typing_project/pet.py
-@@ -33,6 +33,7 @@ class Dog(Pet):
-     def __init__(self, name):
-         self.name = name
-         self.friends = []
-+        self.enemies = []
-
-     def meet(self, other):
-         self.friends.append(other)
 ```
 
 ### Run MonkeyType

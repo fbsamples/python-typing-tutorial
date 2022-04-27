@@ -33,6 +33,7 @@ class Dog(Pet):
     def __init__(self, name):
         self.name = name
         self.friends = []
+        self.enemies = []
 
     def meet(self, other):
         self.friends.append(other)
