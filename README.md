@@ -40,6 +40,8 @@ brew install watchman
 #### On Ubuntu
 
 ```bash
+sudo apt-get update
+
 sudo apt-get -y watchman
 ```
 
@@ -73,10 +75,12 @@ pyenv install 3.10.4
 #### On Ubuntu
 
 ```bash
-sudo apt-get -y watchman\
+sudo apt-get update
+
+sudo apt-get install -y \
     git make build-essential libssl-dev zlib1g-dev libbz2-dev \
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev \
+    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
